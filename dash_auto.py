@@ -90,5 +90,7 @@ if __name__ == '__main__':
 
 #kill -9 $(ps -A | grep python | awk '{print $1}')
 
-
+#to run
+#pip3 install pandas dash
+#python3 dash_auto.py
 
