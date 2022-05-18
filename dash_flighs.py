@@ -75,13 +75,7 @@ app.layout = html.Div(children=[html.H1('US Domestic Airline Flights Performance
                                 style={'textAlign': 'center', 'color': '#503D36',
                                 'font-size': 24}),
     
-                                dcc.Dropdown(id = 'input-type',
-                                options = [{'label':'Airline Performance Report','value':'OPT1'},
-                                {'label':'Yearly Airline Delay Report','value':'OPT2'}],
-                                placeholder = 'Select a report type',
-                                style ={'width': '80%','padding':'3px', 'size': '20px', 
-                                    'text-align-last':'center'}) ,
-
+                                
                                 html.Div([
                                     # Add an division
                                     html.Div([
@@ -93,7 +87,13 @@ app.layout = html.Div(children=[html.H1('US Domestic Airline Flights Performance
                                         ),
                                         #  Add a dropdown
                                         # Enter your code below. Make sure you have correct formatting.
-                                        
+                                        dcc.Dropdown(id = 'input-type',
+                                        options = [{'label':'Yearly Airline Performance Report','value':'OPT1'},
+                                        {'label':'Yearly Airline Delay Report','value':'OPT2'}],
+                                        placeholder = 'Select a report type',
+                                        style ={'width': '80%','padding':'3px', 'size': '20px', 
+                                        'text-align-last':'center'}) ,
+
                                     # Place them next to each other using the division style
                                     ], style={'display':'flex'}),
                                     
