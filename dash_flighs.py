@@ -125,8 +125,8 @@ app.layout = html.Div(children=[html.H1('US Domestic Airline Flights Performance
                                 
                                 # Add a division with two empty divisions inside. See above disvision for example.
                                 html.Div([   
-                                    html.Div([ ], id='plot1'),
-                                     html.Div([ ], id='plot2')                        
+                                    html.Div([ ], id='plot4'),
+                                     html.Div([ ], id='plot5')                        
                                 ], style = {'display': 'flex'}),                               
                                 ])
 
